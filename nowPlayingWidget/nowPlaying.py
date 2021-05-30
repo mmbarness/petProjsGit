@@ -10,17 +10,17 @@ local_client = "<PlexClient:/resources:xxxxxxxxx" #obtained by printing "plex.se
 
 def print_info(msgtype, data, error):
     sessions = plex.sessions()
-    numSessions = (len(sessions))
+    num_sessions = (len(sessions))
     for i in sessions:
         client = str(i.players[0])
         if client == local_client:
-            music_writer(i, numSessions)
+            music_writer(i, num_sessions)
 
-def music_writer(session, numSessions):
+def music_writer(session, num_sessions):
     info = {"Track Title": session.title,
                   "Album": session.album().title,
                   "Artist": session.artist().title, 
-                  "Sessions": numSessions
+                  "Sessions": num_sessions
                   }
     with open('<json filepath>', 'w') as outfile:
         json.dump(info, outfile)
