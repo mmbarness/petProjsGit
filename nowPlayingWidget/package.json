@@ -1,0 +1,22 @@
+{
+  "name": "nowplayingwidget",
+  "version": "1.0.0",
+  "description": "widget for BTT (Better Touch Tool) that displays what's playing on a plex client of your choosing",
+  "main": "serverIndex.js",
+  "dependencies": {
+    "find-process": "^1.4.4",
+    "http": "^0.0.1-security",
+    "node-fetch": "^2.6.1",
+    "pm2": "^5.1.1",
+    "ps-node": "^0.1.6",
+    "python-shell": "^3.0.0",
+    "xml2js": "^0.4.23",
+    "xml2json": "^0.12.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "test"
+  },
+  "author": "matthew barnes",
+  "license": "MIT"
+}
